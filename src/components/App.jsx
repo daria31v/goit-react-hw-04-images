@@ -22,7 +22,7 @@ export const App = () => {
         setIsLoading(true);
         const data = await fetchImages(query, page);
         const resultImages = data.hits;
-        console.log(resultImages);
+       
         if (!resultImages.length) {
           alert('According to the result of the request, there are no photos!');
           return;
