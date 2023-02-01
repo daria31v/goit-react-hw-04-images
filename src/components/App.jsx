@@ -56,7 +56,6 @@ export const App = () => {
   return (
     <Container>
       <SearchBar onSubmit={handleSubmit} />
-      {/* {images === [] && (<Notification/>)} */}
       <ImageGallery images={images} />
       {isLoading ? (
         <Loader />
